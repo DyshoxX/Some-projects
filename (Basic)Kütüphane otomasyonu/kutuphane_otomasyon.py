@@ -83,6 +83,3 @@ Kütüphane otomasyonuna hoşgeldiniz!
 
 main_menu()
 input("İşlem tamamlandı!")
-
-
-#setup.py adlı python dosyası ile os modülü kullanarak "kayit.txt" ve "kitaplar.txt" adlı iki dosya oluştur
