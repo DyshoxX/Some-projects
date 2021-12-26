@@ -33,7 +33,7 @@ class kutuphane_otomasyon(QtWidgets.QMainWindow):
         no = self.ogrenciekle.ogr_no_input.text()
         kitap = "null"
 
-        connection = mysql.connector.connect(host="localhost",user="root",password="mysql1234",database="deneme",port='3306')
+        connection = mysql.connector.connect(host="yourhost",user="youruser",password="yourpassword",database="yourdatabase",port='3306')
         cursor = connection.cursor()
 
         sql = "INSERT INTO deneme(name,surname,no,kitap) VALUES (%s,%s,%s,%s)"
@@ -65,7 +65,7 @@ class kutuphane_otomasyon(QtWidgets.QMainWindow):
         no = self.kitapver.ogr_no_input.text()
         kitap = self.kitapver.kitap_adi_input.text()
 
-        connection = mysql.connector.connect(host="localhost",user="root",password="mysql1234",database="deneme",port='3306')
+        connection = mysql.connector.connect(host="yourhost",user="youruser",password="yourpassword",database="yourdatabase",port='3306')
         cursor = connection.cursor()
 
         sql = "UPDATE deneme set kitap=%s Where no=%s"
